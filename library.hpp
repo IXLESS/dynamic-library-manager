@@ -6,12 +6,11 @@
 #include <iostream>
 #include <sstream>
 
-// Razred Library upravlja dinamični seznam kazalcev na Book
 class Library {
 private:
-    Book** books;   // dinamična tabela kazalcev na knjige
-    int size;       // trenutno število knjig
-    int capacity;   // kapaciteta tabele
+    Book** books;
+    int size;
+    int capacity;
 
     // Povečamo kapaciteto tabele, ko je polna
     void resize() {
