@@ -1,0 +1,37 @@
+#ifndef BOOK_HPP
+#define BOOK_HPP
+
+#include <string>
+#include <iostream>
+
+// Razred Book predstavlja eno knjigo z osnovnimi podatki
+class Book {
+private:
+    std::string title;
+    std::string author;
+    int year;
+
+public:
+    // Preprost konstruktor, ki inicializira vse atribute
+    Book(const std::string& t, const std::string& a, int y)
+        : title(t), author(a), year(y) {}
+
+    std::string getTitle() const {
+        return title;
+    }
+
+    std::string getAuthor() const {
+        return author;
+    }
+
+    int getYear() const {
+        return year;
+    }
+
+    // Izpišemo knjigo v eni vrstici v lepo berljivi obliki
+    void print() const {
+        std::cout << "\"" << title << "\" - " << author << " (" << year << ")";
+    }
+};
+
+#endif
