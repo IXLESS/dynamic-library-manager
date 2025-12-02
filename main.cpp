@@ -1,11 +1,11 @@
 #include <iostream>
 #include <limits>
 #include <string>
-#include "library.hpp"  // naš razred Library (upravljanje knjig)
+#include "library.hpp"
 
-// Glavna funkcija aplikacije
+
 int main() {
-    Library lib;  // objekt, ki hrani vse knjige v dinamični tabeli
+    Library lib;
 
     // Ob zagonu poskusimo naložiti knjige iz datoteke (če obstaja)
     lib.loadFromFile("books.txt");
