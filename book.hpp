@@ -4,7 +4,6 @@
 #include <string>
 #include <iostream>
 
-// Razred Book predstavlja eno knjigo z osnovnimi podatki
 class Book {
 private:
     std::string title;
@@ -28,7 +27,7 @@ public:
         return year;
     }
 
-    // Izpišemo knjigo v eni vrstici v lepo berljivi obliki
+    // Izpišemo knjigo v eni vrstici v berljivi obliki
     void print() const {
         std::cout << "\"" << title << "\" - " << author << " (" << year << ")";
     }
